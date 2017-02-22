@@ -39,7 +39,9 @@
             android:text="@string/textButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/cmdSaludar" />
+            android:id="@+id/cmdSaludar"
+            android:onClick="saludar (Principal)"
+            style="@style/Widget.AppCompat.Button" />
 
         <TextView
             android:layout_width="match_parent"
