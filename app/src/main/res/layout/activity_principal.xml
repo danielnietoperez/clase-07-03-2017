@@ -14,9 +14,9 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentStart="true">
 
         <TextView
             android:layout_width="match_parent"
@@ -33,19 +33,24 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/txtNombre" />
+            android:id="@+id/txtNombre"
+            android:hint="@string/nombre" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtApellido"
+            android:hint="@string/apellido" />
 
         <Button
             android:text="@string/textButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/cmdSaludar"
-            android:onClick="saludar (Principal)"
+            android:onClick="saludar"
             style="@style/Widget.AppCompat.Button" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/lblMessage" />
     </LinearLayout>
 </RelativeLayout>

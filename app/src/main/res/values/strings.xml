@@ -3,4 +3,6 @@
     <string name="titulo">Aplicación Saludar</string>
     <string name="textButton">Saludar</string>
     <string name="saludo">Hola </string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
 </resources>

@@ -22,6 +22,6 @@ public class Principal extends AppCompatActivity {
 
     public void saludar(View v) {
         String aux = txtNombre.getText().toString();
-        lblMessage.setText("@string/saludo" + aux);
+        lblMessage.setText("Hola " + aux);
     }
 }
