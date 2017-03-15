@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">HolaMundo</string>
+    <string name="app_name">Hello world</string>
+    <string name="apellido">last name</string>
+    <string name="bienvenido">Welcome</string>
+    <string name="nombre">Name</string>
+    <string name="partesaludo2">Welcome to this aplication!!!</string>
+    <string name="saludo">Hello</string>
+    <string name="textButton">Say Hello</string>
+    <string name="titulo">App Hello</string>
 </resources>
