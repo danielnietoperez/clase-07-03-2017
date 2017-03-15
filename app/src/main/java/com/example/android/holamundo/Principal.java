@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Principal extends AppCompatActivity {
 //declaramos variable
@@ -29,17 +30,33 @@ public class Principal extends AppCompatActivity {
 
     public void saludar(View v) {
         String nomb,apell;
-        //tomo el valor que la persona ingreso tanto en nombre como en apellido
-        nomb = cajaNombre.getText().toString();
-        apell= cajaApellido.getText().toString();
-        //Encapsulo los valores previamente tomados
-        b.putString("Nombre",nomb);
-        b.putString("Apellido",apell);
-        //le paso al intent todos los datos en forma encapsulada con el bundle
-        i.putExtras(b);
-        //Arranco la actividad que el intent me diga
-        startActivity(i);
-      /*  String aux = txtNombre.getText().toString();
-        lblMessage.setText("Hola " + aux);*/
+        if (validar()) {
+            //tomo el valor que la persona ingreso tanto en nombre como en apellido
+            nomb = cajaNombre.getText().toString();
+            apell = cajaApellido.getText().toString();
+            //Encapsulo los valores previamente tomados
+            b.putString("Nombre", nomb);
+            b.putString("Apellido", apell);
+            //le paso al intent todos los datos en forma encapsulada con el bundle
+            i.putExtras(b);
+            //Arranco la actividad que el intent me diga
+            startActivity(i);
+        }
+    }
+
+
+    public boolean validar(){
+        if (cajaNombre.getText().toString().isEmpty()){
+            //tambien puede usar this en ves del getaplicationcontext
+            cajaNombre.setError(getResources().getString(R.string.error_1));
+            //Toast.makeText(getApplicationContext(),"Digite el nombre por favor",Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (cajaApellido.getText().toString().isEmpty()){
+            cajaApellido.setError(getResources().getString(R.string.error_2));
+            //Toast.makeText(getApplicationContext(),"Digite el apellido por favor",Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        return true;
     }
 }

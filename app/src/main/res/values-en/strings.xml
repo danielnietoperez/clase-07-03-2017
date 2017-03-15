@@ -8,4 +8,6 @@
     <string name="saludo">Hello</string>
     <string name="textButton">Say Hello</string>
     <string name="titulo">App Hello</string>
+    <string name="error_1">Type your name</string>
+    <string name="error_2">Type you Lastname</string>
 </resources>
