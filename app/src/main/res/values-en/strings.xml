@@ -10,4 +10,13 @@
     <string name="titulo">App Hello</string>
     <string name="error_1">Type your name</string>
     <string name="error_2">Type you Lastname</string>
+    <string name="borrar">Clear</string>
+    <string name="casado">Married</string>
+    <string name="divorciado">Divorced</string>
+    <string name="estadoCivil">Civil status</string>
+    <string name="genero">Gender</string>
+    <string name="soltero">Single</string>
+    <string name="femenino">Female</string>
+    <string name="masculino">Male</string>
+    <string name="tudatosson">your personal information is:</string>
 </resources>

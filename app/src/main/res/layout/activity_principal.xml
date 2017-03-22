@@ -106,14 +106,18 @@
                     android:id="@+id/cmdSaludar"
                     android:onClick="saludar"
                     style="@style/Widget.AppCompat.Button"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="@android:color/background_dark"
+                    android:background="@android:color/holo_green_light" />
 
                 <Button
                     android:text="@string/borrar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/cmdBorrar"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_dark"
+                    android:onClick="borrar"/>
 
             </LinearLayout>
 
